@@ -9,3 +9,13 @@
 4. It's not bragging if you can back it up Write a function that frees a 2 dim   ensional grid previously created by your alloc_grid function. Prototype: vo   id free_grid(int **grid, int height); Your program should not crash if the    grid is invalid (NULL or size = 0) Note that we will compile with your allo   c_grid.c file. Make sure it compiles
 
 5. It isn't the mountains ahead to climb that wear you out; it's the pebble in   your shoe Write a function that concatenates all the arguments of your prog   ram. Prototype: char *argstostr(int ac, char **av); Returns NULL if ac == 0   or av == NULL Returns a pointer to a new string, or NULL if it fails Each a   rgument should be followed by a \n in the new string
+
+6. I will show you how great I am
+   Write a function that splits a string into words.
+   Prototype: char **strtow(char *str);
+   The function returns a pointer to an array of strings (words)
+   Each element of this array should contain a single word, null-terminated
+   The last element of the returned array should be NULL
+   Words are separated by spaces
+   Returns NULL if str == NULL or str == ""
+   If your function fails, it should return NULL
