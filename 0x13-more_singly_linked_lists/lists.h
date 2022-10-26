@@ -1,7 +1,8 @@
-#ifndef LISTS_H
-#define LISTS_H
-
+#ifndef MORE_SINGLY_LINKED_LIST_H_
+#define MORE_SINGLY_LINKED_LIST_H_
 #include <stdlib.h>
+#include <unistd.h>
+#include <stddef.h>
 
 /**
  * struct listint_s - singly linked list
@@ -11,6 +12,7 @@
  * Description: singly linked list node structure
  * for Holberton project
  */
+
 typedef struct listint_s
 {
 	int n;
@@ -33,4 +35,6 @@ size_t print_listint_safe(const listint_t *head);
 size_t free_listint_safe(listint_t **h);
 listint_t *find_listint_loop(listint_t *head);
 
-#endif /* LISTS_H */
+int _putchar(char c);
+
+#endif
